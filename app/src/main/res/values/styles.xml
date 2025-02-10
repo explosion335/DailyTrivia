@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!-- MD3 switch fix
+https://stackoverflow.com/questions/73639187/new-android-12-materialswitch-and-androidx-preference
+-->
+<resources>
+
+    <style name="AppPreferenceThemeOverlay" parent="@style/PreferenceThemeOverlay">
+        <item name="switchPreferenceCompatStyle">@style/AppSwitchPreference</item>
+    </style>
+
+    <style name="AppSwitchPreference" parent="@style/Preference.SwitchPreferenceCompat.Material">
+        <item name="widgetLayout">@layout/preference_switch</item>
+    </style>
+
+</resources>

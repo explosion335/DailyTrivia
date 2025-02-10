@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="social_login_button_google_style" format="reference" />
+    <attr name="social_login_button_github_style" format="reference" />
+    <attr name="social_login_button_facebook_style" format="reference" />
+    <attr name="social_login_button_gitlab_style" format="reference" />
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quiz_settings_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/quiz_settings_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/number_of_questions_edit_text_layout"
+            style="?attr/textInputFilledStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/number_of_questions_limit"
+            android:hint="@string/number_of_questions_limit"
+            android:inputType="number"
+            app:errorEnabled="true"
+            app:errorIconDrawable="@null">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/number_of_questions_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--borderless-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categories_layout"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_categories">
+
+            <AutoCompleteTextView
+                android:id="@+id/categories_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/select_categories"
+                android:inputType="none"
+                app:simpleItems="@array/difficulty_levels" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Difficulty dropdown menu-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/difficulty_layout"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/difficulty_prompt">
+
+            <AutoCompleteTextView
+                android:id="@+id/difficulty_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/difficulty_prompt"
+                android:inputType="none"
+                app:simpleItems="@array/difficulty_levels" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Type menu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/type_layout"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_prompt">
+
+            <AutoCompleteTextView
+                android:id="@+id/type_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/type_prompt"
+                android:inputType="none"
+                app:simpleItems="@array/question_types"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Encoding menu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/encoding_layout"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/encoding_prompt">
+
+            <AutoCompleteTextView
+                android:id="@+id/encoding_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/encoding_prompt"
+                android:inputType="none"
+                app:simpleItems="@array/encoding_types" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/quiz_settings_layout2"
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/playQuizButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/play" />
+
+            <Button
+                android:id="@+id/save_settings_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/save_profile" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
