@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_multi"
+    app:startDestination="@id/hostFragment">
+
+    <fragment
+        android:id="@+id/hostFragment"
+        android:name="com.example.dailytrivia.HostFragment"
+        android:label="@string/host_game"
+        tools:layout="@layout/fragment_host" />
+
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.example.dailytrivia.JoinFragment"
+        android:label="@string/join_game"
+        tools:layout="@layout/fragment_join" />
+</navigation>

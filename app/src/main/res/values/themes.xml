@@ -1,0 +1,17 @@
+<resources >
+    <!-- Base application theme. -->
+    <!-- MD3 switch fix
+    https://stackoverflow.com/questions/73639187/new-android-12-materialswitch-and-androidx-preference
+    -->
+    <style name="Base.Theme.DailyTrivia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="preferenceTheme">@style/AppPreferenceThemeOverlay</item>
+
+<!--Shared axis transition-->
+        <item  name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="Theme.DailyTrivia" parent="Base.Theme.DailyTrivia" />
+</resources>

@@ -1,0 +1,6 @@
+Changes of Design Choices:
+Bonus Features: Originally I was going to create a multiplayer mode and wagering points. For multiplayer, currently multiple devices can join the game and discover each other(using Websockets, only works within the same network with no restrictions). However due to unknown reasons, questions are not distributed after starting the game and the view will crash instantly due to this. Since I failed to resolve this, I changed this bonus feature to "User Profiles". User can create multiple profiles to save their game preferences such as categories and number of questions into the database. Instead of changing the preference everytime, user can use the profile to load the preferences now.
+
+Login Credentials that contains some stats:
+Username: t
+Password: 12345678
